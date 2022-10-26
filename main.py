@@ -1,22 +1,8 @@
-# MEU PRIMEIRO PROJETO PYTHON!!!!!!
+# comando input(), permitir que o usuario digite algo
 
-'''
-Comentario em bloco
-'''
+nome = input("Digite seu nome: ")
+idade = int (input("Digite sua idade: "))
+dobro = idade * 2
 
-print("Olá Mundo!!!")
-
-# guardar String (com aspas) e int (sem aspas)
-nome = "Gabriel Durgante"
-idade = 18
-
-# usando o +
-print("meu nome é " +nome+ " e tenho "+str(idade),"anos" "\n")
-
-#usando {} é necessario o f no inicio  
-print(f"Meu nome é {nome} e tenho {idade} anos \n")
-
-# usando .format
-print("Meu nome é {} e tenho {} anos ".format(nome,idade),"\n")
-
-
+print(f"Seu nome é {nome} e sua idade é {idade} anos")     
+print(f"O dobro da sua idade é {dobro}")
