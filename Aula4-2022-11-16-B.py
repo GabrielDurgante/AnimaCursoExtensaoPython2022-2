@@ -8,7 +8,11 @@ conexao = sqlite3.connect("dc_universe.db")
 cursor = conexao.cursor()
 
 # passo 4 - inserir um herói/vilão
-sql = "INSERT INTO pessoas (pessoa_id, nome, nome_civil, tipo) VALUES (12, 'The Flash', 'Barry Allen', 'Herói()na')"
+sql = "INSERT INTO pessoas (pessoa_id, nome, nome_civil, tipo) VALUES (13, 'Lex Luthor', 'Alexander Joseph', 'Vilã(o)')"
 
 # passo 5 - Executar o comando SQL
 cursor.execute(sql)
+
+# passo 6 - Confirmar o INSERT com commit() e fechar o banco
+conexao.commit()
+conexao.close()
